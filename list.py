@@ -1,4 +1,4 @@
-from typing import Iterable
+from typing import List
 
 class CustomList:
 
@@ -9,7 +9,7 @@ class CustomList:
         self._holder = []
         
         if values:
-            if isinstance(values, Iterable):
+            if isinstance(values, list):
                 for value in values:
                     self._holder.append(value)
                     self._size += 1
